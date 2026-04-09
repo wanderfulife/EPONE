@@ -7,6 +7,8 @@ export const templateSurveyQuestions = [
     {
         id: "Q1",
         text: "Lieu du stationnement du véhicule :",
+        image: "/plan.png",
+        imageAlt: "Plan des zones de stationnement",
         type: 'singleChoice',
         options: [
             { id: 1, text: "Épône - Nord de l'A13, zone 1", next: "Q2" },
