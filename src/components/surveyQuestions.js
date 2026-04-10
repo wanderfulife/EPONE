@@ -4,19 +4,12 @@
 export const templateSurveyQuestions = [
 
     // 🅿️ Q1 - Lieu du stationnement du véhicule
-    {
+     {
         id: "Q1",
-        text: "Lieu du stationnement du véhicule :",
-        image: "/plan.png",
-        imageAlt: "Plan des zones de stationnement",
-        type: 'singleChoice',
-        options: [
-            { id: 1, text: "Épône - Nord de l'A13, zone 1", next: "Q2" },
-            { id: 2, text: "Épône - Centre Bourg + quartier gare et ZA de la Couronne des Près, zone 2", next: "Q2" },
-            { id: 3, text: "Épône - Sud-Epône + Résidence de Velannes, zone 3", next: "Q2" },
-            { id: 4, text: "Mézières - Centre bourg + quartier Chaufour, zone 1", next: "Q2" },
-            { id: 5, text: "Mézières - Quartiers la Villeneuve et la Folie, zone 2", next: "Q2" }
-        ]
+        text: "Préciser :",
+        type: 'freeText',
+        freeTextPlaceholder: "Préciser le lieu...",
+        next: "Q2"
     },
 
     // 🎯 Q2 - Raison principale pour laquelle la personne vient de se garer
@@ -76,6 +69,8 @@ export const templateSurveyQuestions = [
         text: "Préciser la rue, le quartier ou le lieu remarquable :",
         type: 'freeText',
         freeTextPlaceholder: "Rue, quartier ou lieu remarquable...",
+        image: "/plan.png",
+        imageAlt: "Plan d'Épône-Mézières",
         next: "end"
     },
 
